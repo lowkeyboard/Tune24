@@ -50,7 +50,7 @@ const LoginScreen = ({navigation}) => {
       .then(userCredentials => {
         const user = userCredentials.user;
         console.log('User signed in with', user.email);
-        navigation.replace('Home');
+        navigation.replace('TabNav');
       })
       .catch(error => {
         if (error.code === 'auth/email-already-in-use') {
