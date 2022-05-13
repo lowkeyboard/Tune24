@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>953942040046-qlhkk8bucj03kde85amer8n69dpjami9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.953942040046-qlhkk8bucj03kde85amer8n69dpjami9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCaNDCojQUxOGJQLVOvZaZg93Q6sOvxda4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>953942040046</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.example.rntune24</string>
+	<key>PROJECT_ID</key>
+	<string>tune24-reactnative</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tune24-reactnative.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:953942040046:ios:0429bfcfb63a7bb69b82ff</string>
+</dict>
+</plist>
