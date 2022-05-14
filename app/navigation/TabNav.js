@@ -41,7 +41,7 @@ export default function TabNav() {
           ),
 
           headerTitleContainerStyle: {
-            elevation: 2,
+            elevation: 0,
           },
         }}
       />

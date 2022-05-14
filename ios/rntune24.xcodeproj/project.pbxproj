@@ -15,6 +15,9 @@
 		7699B88040F8A987B510C191 /* libPods-rntune24-rntune24Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-rntune24-rntune24Tests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		A2C715EE282E3E1000650345 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2C715ED282E3E1000650345 /* GoogleService-Info.plist */; };
+		6A10FD8EB8BB415E8CE3A7CE /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6EE2984BBD7345B29D441303 /* DMSans-Bold.ttf */; };
+		6EC9CFEFDA4C46D0989495F4 /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E64AA1EC569F4A8A9FA52557 /* DMSans-Medium.ttf */; };
+		D38CA355CFB0493ABBDAA360 /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1287DB3AE3440A38B6666AF /* DMSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		DF887E9D59C14958BE8F6056 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		E9420E074146497D8C537221 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		6EE2984BBD7345B29D441303 /* DMSans-Bold.ttf */ = {isa = PBXFileReference; name = "DMSans-Bold.ttf"; path = "../assets/fonts/DMSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E64AA1EC569F4A8A9FA52557 /* DMSans-Medium.ttf */ = {isa = PBXFileReference; name = "DMSans-Medium.ttf"; path = "../assets/fonts/DMSans-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C1287DB3AE3440A38B6666AF /* DMSans-Regular.ttf */ = {isa = PBXFileReference; name = "DMSans-Regular.ttf"; path = "../assets/fonts/DMSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +193,9 @@
 				97DF0EB4A73A4355A4198201 /* Octicons.ttf */,
 				BA89ED525B254D5B872AAFB2 /* SimpleLineIcons.ttf */,
 				B268ED85000E4DA08B79A749 /* Zocial.ttf */,
+				6EE2984BBD7345B29D441303 /* DMSans-Bold.ttf */,
+				E64AA1EC569F4A8A9FA52557 /* DMSans-Medium.ttf */,
+				C1287DB3AE3440A38B6666AF /* DMSans-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -289,6 +298,9 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				A2C715EE282E3E1000650345 /* GoogleService-Info.plist in Resources */,
+				6A10FD8EB8BB415E8CE3A7CE /* DMSans-Bold.ttf in Resources */,
+				6EC9CFEFDA4C46D0989495F4 /* DMSans-Medium.ttf in Resources */,
+				D38CA355CFB0493ABBDAA360 /* DMSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
