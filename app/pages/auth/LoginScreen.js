@@ -33,7 +33,7 @@ const LoginScreen = ({navigation}) => {
   React.useEffect(() => {
     const unsubscribe = auth().onAuthStateChanged(user => {
       if (user) {
-        navigation.replace('Home');
+        navigation.replace('TabNav');
       }
     });
 
@@ -91,7 +91,7 @@ const LoginScreen = ({navigation}) => {
           alignItems: 'center',
         }}>
         <Image
-          source={images.logo}
+          source={images.applogo}
           resizeMode="contain"
           style={{
             height: 250,
@@ -151,34 +151,10 @@ const LoginScreen = ({navigation}) => {
           </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity
-          style={{
-            flexDirection: 'row',
-            alignContent: 'center',
-            justifyContent: 'center',
-            height: 55,
-            marginHorizontal: 30,
-            marginTop: 40,
-            marginBottom: -20,
-            paddingHorizontal: SIZES.radius,
-            borderRadius: 30,
-            backgroundColor: COLORS.primary,
-            ...styles.shadow,
-          }}
-          onPress={handleSignIn}>
-          <View>
-            <Text
-              style={{
-                justifyContent: 'center',
-                alignSelf: 'center',
-                top: 10,
-                color: COLORS.white,
-                fontSize: 25,
-              }}>
-              Sign In
-            </Text>
-          </View>
+        <TouchableOpacity style={styles.loginButton} onPress={handleSignIn}>
+          <Text style={styles.txtloginbtn}>Sign In</Text>
         </TouchableOpacity>
+
         <View
           style={{
             flexDirection: 'row',
@@ -196,8 +172,7 @@ const LoginScreen = ({navigation}) => {
             onPress={() => navigation.navigate('Register')}>
             <Text
               style={{
-                color: COLORS.primary,
-                fontSize: 19,
+                color: COLORS.lightBlue,
               }}>
               Sign Up
             </Text>
@@ -217,24 +192,35 @@ const LoginScreen = ({navigation}) => {
               alignContent: 'center',
               justifyContent: 'center',
               height: 65,
-              width: 120,
+              width: 65,
               marginHorizontal: 20,
               marginBottom: -20,
-              borderRadius: 50,
+              borderRadius: 10,
               backgroundColor: COLORS.white,
               elevation: 1,
               ...styles.shadow,
-            }}></TouchableOpacity>
+            }}>
+            <Image
+              source={images.googlelogo}
+              style={{
+                padding: 10,
+                margin: 5,
+                height: 50,
+                width: 40,
+                resizeMode: 'contain',
+              }}
+            />
+          </TouchableOpacity>
           <TouchableOpacity
             style={{
               flexDirection: 'row',
               alignContent: 'center',
               justifyContent: 'center',
               height: 65,
-              width: 120,
+              width: 65,
               marginHorizontal: 20,
               marginBottom: -20,
-              borderRadius: 50,
+              borderRadius: 10,
               backgroundColor: '#4267B2',
               elevation: 1,
               ...styles.shadow,
@@ -279,4 +265,18 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   textAbove: {fontSize: 14, marginLeft: 12},
+  loginButton: {
+    backgroundColor: COLORS.blue,
+    borderRadius: 5,
+    marginTop: 40,
+    marginHorizontal: 12,
+    padding: 14,
+  },
+  txtloginbtn: {
+    justifyContent: 'center',
+    alignSelf: 'center',
+    color: COLORS.white,
+    fontSize: 15,
+    fontFamily: 'Helvetica',
+  },
 });

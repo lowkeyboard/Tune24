@@ -6,6 +6,9 @@ export const COLORS = {
   primary: '#85e8ff', // light blue
   secondary: '#CDCDD2', // gray
 
+  blue: '#133866',
+  lightBlue: '#2886fa',
+
   // colors
   black: '#1E1F20',
   white: '#FFFFFF',

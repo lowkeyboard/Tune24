@@ -1,5 +1,7 @@
-export const logo = require('../../assets/applogo.png');
+export const applogo = require('../../assets/applogo.png');
+export const googlelogo = require('../../assets/googlelogo.png');
 
 export default {
-  logo,
+  applogo,
+  googlelogo,
 };

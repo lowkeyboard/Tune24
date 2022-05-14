@@ -1,16 +1,16 @@
 import React, {useEffect} from 'react';
 
-import {TouchableOpacity, View, Text} from 'react-native';
+import {Button, View, Text} from 'react-native';
+import auth from '@react-native-firebase/auth';
 
 export default function Home({navigation}) {
-  useEffect(
-    () => navigation.addListener('focus', () => alert('Screen was focused')),
-    [],
-  );
+  function FirebaseLogOut() {
+    auth().signOut().then(navigation.navigate('Login'));
+  }
 
   return (
-    <View>
-      <Text>home screen</Text>
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Button title="Signing out." onPress={FirebaseLogOut} />
     </View>
   );
 }
