@@ -19,6 +19,10 @@ target 'rntune24' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'RNFS', :path => '../node_modules/react-native-fs'
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   target 'rntune24Tests' do
     inherit! :complete
     # Pods for testing
