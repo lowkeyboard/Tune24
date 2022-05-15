@@ -16,6 +16,6 @@ Tune24 application where you can sign up, post and watch videos!
 ## Roadmap
 
 - [x] Login, Register Pages (Firebase Auth)
-- [ ] Deploy NodeJS app to Heroku
-- [ ] Retrive videos from backend's persistent database.
+- [x] Deploy NodeJS app to Heroku
+- [ ] Retrive videos from backend.(persistent db)
 - [ ] react native network api manager.
