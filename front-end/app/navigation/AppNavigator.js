@@ -1,6 +1,5 @@
 import React, {useRef} from 'react';
 import firebase from '@react-native-firebase/app';
-
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
@@ -14,7 +13,6 @@ const Stack = createStackNavigator();
 
 export function getActiveRouteName(state: any): any {
   const route = state.routes[state.index];
-
   // resolve nested navigators recursivly
   if (route.state) {
     return getActiveRouteName(route.state);

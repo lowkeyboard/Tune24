@@ -7,7 +7,7 @@ import {images, SIZES, COLORS} from '../../constants';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
 export default function Home({navigation}) {
-  let username = 'Ji-woo';
+  let username = 'Alex';
   return (
     <View
       style={{

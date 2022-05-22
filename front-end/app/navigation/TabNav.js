@@ -3,7 +3,7 @@ import React, {useEffect, useRef} from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {Icon} from '@rneui/themed';
 import {Text, View, StyleSheet, Image} from 'react-native';
-import Profile from '../pages/tabpages/Profile';
+import {ProfileMap} from '../pages/tabpages/Profile';
 import Home from '../pages/tabpages/Home';
 import {images, SIZES, COLORS} from '../constants';
 
@@ -11,7 +11,7 @@ const Drawer = createDrawerNavigator();
 
 export default function TabNav() {
   return (
-    <Drawer.Navigator initialRouteName="Home">
+    <Drawer.Navigator initialRouteName="Profile">
       <Drawer.Screen
         name="Home"
         component={Home}
@@ -45,7 +45,15 @@ export default function TabNav() {
           },
         }}
       />
-      <Drawer.Screen name="Profile" component={Profile} />
+      <Drawer.Screen
+        name="Profile"
+        component={ProfileMap}
+        options={{
+          drawerIcon: ({focused, size}) => (
+            <Icon name="person" color="#00aced" />
+          ),
+        }}
+      />
     </Drawer.Navigator>
   );
 }
