@@ -3,7 +3,7 @@ import React, {useEffect, useRef} from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {Icon} from '@rneui/themed';
 import {Text, View, StyleSheet, Image} from 'react-native';
-import {ProfileMap} from '../pages/tabpages/Profile';
+import Profile from '../pages/tabpages/Profile';
 import Home from '../pages/tabpages/Home';
 import {images, SIZES, COLORS} from '../constants';
 
@@ -47,7 +47,7 @@ export default function TabNav() {
       />
       <Drawer.Screen
         name="Profile"
-        component={ProfileMap}
+        component={Profile}
         options={{
           drawerIcon: ({focused, size}) => (
             <Icon name="person" color="#00aced" />

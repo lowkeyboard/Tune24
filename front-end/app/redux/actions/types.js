@@ -1,0 +1,4 @@
+export const types = {
+  GET_ALL_VIDEO_ID: 'GET_ALL_VIDEO_ID',
+  GET_ALL_VIDEO_ID_SUCCESS: 'GET_ALL_VIDEO_ID_SUCCESS',
+};
