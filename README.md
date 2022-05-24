@@ -1,21 +1,25 @@
 # Tune24
 
-This repo contains a react native application with nodejs server as backend. The server constructed its database from (https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset?resource=download&select=US_youtube_trending_data.csv).
+This repo contains a react native application with nodejs server as backend. The server has constructed its database from (https://www.kaggle.com/datasets/rsrishav/youtube-trending-video-dataset?resource=download&select=US_youtube_trending_data.csv).
 
-Tune24 application where you can sign up, post and watch videos!
+Tune24 application where you can sign up and watch videos!
 
-## React Native App
+## How to run
 
-- authentication via Firebase Auth.
-- get videos via nodejs backend api.
+cd front-end
+yarn start && npx react-native run-ios
 
-# NodeJs
+# NodeJs - Express
 
--to be deployed on Heroku.
+API Get Requests are sent to:
+
+- https://my-youtube-24.herokuapp.com/youtubedata?page=1&limit=10
+  source code is under back-end folder.
 
 ## Roadmap
 
 - [x] Login, Register Pages (Firebase Auth)
 - [x] Deploy NodeJS app to Heroku
-- [ ] Retrive videos from backend.(persistent db)
+- [ ] Retrive videos from backend.
 - [ ] react native network api manager.
+- [ ] extra library configurations for android.
