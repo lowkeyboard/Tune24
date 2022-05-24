@@ -8,7 +8,7 @@ const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
 
-server.get("/youtubedata", (req, res) => {
+server.get("/youtubedb", (req, res) => {
   //   res.jsonp(req.query);
   res.jsonp({
     W8heLOq4kiQ: {
@@ -205,6 +205,8 @@ router.render = (req, res) => {
         _totalRows: Number.parseInt(totalCountHeader),
       },
     };
+
+    console.log(result.data);
 
     return res.jsonp(result);
   }
