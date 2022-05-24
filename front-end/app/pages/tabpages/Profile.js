@@ -10,6 +10,7 @@ import {
 import auth from '@react-native-firebase/auth';
 import {useDispatch, useSelector} from 'react-redux';
 import {fetchVideoID} from '../../redux/actions/idActions';
+import {v4 as uuidv4} from 'uuid';
 
 export default function Profile({navigation}) {
   const dispatch = useDispatch();
@@ -18,8 +19,6 @@ export default function Profile({navigation}) {
   useEffect(() => {
     dispatch(fetchVideoID({}));
   }, []);
-
-  console.log(videos);
 
   return (
     <View style={styles.container}>
