@@ -3,8 +3,8 @@ import React, {useEffect, useRef} from 'react';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {Icon} from '@rneui/themed';
 import {Text, View, StyleSheet, Image} from 'react-native';
-import Profile from '../pages/tabpages/Profile';
-import Home from '../pages/tabpages/Home';
+import Profile from '../pages/tabpages/Profile/Profile';
+import Home from '../pages/tabpages/Home/Home';
 import {images, SIZES, COLORS} from '../constants';
 
 const Drawer = createDrawerNavigator();
