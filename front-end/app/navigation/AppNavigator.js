@@ -21,7 +21,7 @@ export function getActiveRouteName(state: any): any {
   return route.name;
 }
 
-const AppNav = () => {
+const AppNav = ({navigation}) => {
   const routeNameRef = useRef(null);
 
   return (

@@ -1,17 +1,55 @@
 import React, {useEffect, useRef} from 'react';
 
-import {createDrawerNavigator} from '@react-navigation/drawer';
+import {
+  createDrawerNavigator,
+  DrawerContentScrollView,
+  DrawerItemList,
+  DrawerItem,
+} from '@react-navigation/drawer';
 import {Icon} from '@rneui/themed';
 import {Text, View, StyleSheet, Image} from 'react-native';
 import Profile from '../pages/tabpages/Profile/Profile';
 import Home from '../pages/tabpages/Home/Home';
 import {images, SIZES, COLORS} from '../constants';
+import {firebase} from '@react-native-firebase/auth';
 
 const Drawer = createDrawerNavigator();
 
-export default function TabNav() {
+export default function TabNav({navigation}) {
+  function CustomDrawerList(props) {
+    return (
+      <DrawerContentScrollView {...props} contentContainerStyle={{flex: 1}}>
+        {/*all of the drawer items*/}
+        <DrawerItemList {...props} style={{borderWidth: 1}} />
+        <View style={{flex: 1, marginVertical: 20, borderWidth: 0}}>
+          {/* here's where you put your logout drawer item*/}
+          <DrawerItem
+            label="Log out"
+            onPress={() => {
+              firebase
+                .auth()
+                .signOut()
+                .then(() => {
+                  navigation.navigate('Login');
+                });
+            }}
+            style={{flex: 1, justifyContent: 'flex-end'}}
+          />
+        </View>
+      </DrawerContentScrollView>
+    );
+  }
+
   return (
-    <Drawer.Navigator initialRouteName="Profile">
+    <Drawer.Navigator
+      initialRouteName="Profile"
+      drawerContent={props => {
+        return (
+          <DrawerContentScrollView {...props}>
+            <CustomDrawerList {...props} />
+          </DrawerContentScrollView>
+        );
+      }}>
       <Drawer.Screen
         name="Home"
         component={Home}

@@ -31,7 +31,7 @@ export default function Home({navigation}) {
     dispatch(fetchVideoID({}));
   }, []);
 
-  let username = firebase.auth().currentUser.email;
+  var username = firebase.auth().currentUser.email;
 
   return (
     <View style={styles.welcomeArea}>
