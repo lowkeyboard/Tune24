@@ -39,7 +39,6 @@ export default function TabNav() {
               <Text style={styles.appTextBar}>Tune24</Text>
             </View>
           ),
-
           headerTitleContainerStyle: {
             elevation: 0,
           },
@@ -50,7 +49,7 @@ export default function TabNav() {
         component={Profile}
         options={{
           drawerIcon: ({focused, size}) => (
-            <Icon name="person" color="#00aced" />
+            <Icon name="camera" color="#00aced" />
           ),
         }}
       />
