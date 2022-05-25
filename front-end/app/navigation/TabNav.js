@@ -46,7 +46,7 @@ export default function TabNav() {
         }}
       />
       <Drawer.Screen
-        name="Profile"
+        name="Videos"
         component={Profile}
         options={{
           drawerIcon: ({focused, size}) => (
