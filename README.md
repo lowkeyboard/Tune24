@@ -20,6 +20,6 @@ API Get Requests are sent to:
 
 - [x] Login, Register Pages (Firebase Auth)
 - [x] Deploy NodeJS app to Heroku
-- [ ] Retrive videos from backend.
-- [ ] react native network api manager.
+- [x] Retrive videos from backend.
 - [ ] extra library configurations for android.
+- [ ] comments
